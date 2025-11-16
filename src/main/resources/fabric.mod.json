@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mobgear",
+	"version": "${version}",
+	"name": "Mob Gear",
+	"description": "New armor, tools, and weapons based on different mobs",
+	"authors": [
+		"Us!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mobgear/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.jp479.mobgear.MobGear"
+		],
+		"fabric-datagen": [
+			"com.jp479.mobgear.MobGearDataGenerator"
+		]
+	},
+	"mixins": [
+		"mobgear.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
