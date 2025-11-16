@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "type": "item",
+      "source": {
+        "type": "loot_table",
+        "name": "mobgear:inject/entities/bat"
+      },
+      "target": "minecraft:entities/bat"
+    }
+  ]
+}
