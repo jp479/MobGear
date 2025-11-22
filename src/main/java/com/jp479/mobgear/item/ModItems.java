@@ -3,6 +3,7 @@ package com.jp479.mobgear.item;
 import com.jp479.mobgear.MobGear;
 import com.jp479.mobgear.item.custom.BatHelmet;
 import com.jp479.mobgear.item.custom.BlazePickaxe;
+import com.jp479.mobgear.item.custom.BlazeSword;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -33,7 +34,12 @@ public class ModItems {
             new Item.Settings()
     );
 
-    // Weapons & Tools
+    // Tools & Weapons
+    public static final BlazeSword BLAZE_SWORD = (BlazeSword)  register(
+            "blaze_sword",
+            BlazeSword::new,
+            new Item.Settings().sword(ModToolMaterials.BLAZE_DIAMOND_MATERIAL, 3.0f, -2.4f)
+    );
     public static final BlazePickaxe BLAZE_PICKAXE = (BlazePickaxe) register(
             "blaze_pickaxe",
             BlazePickaxe::new,
@@ -74,6 +80,7 @@ public class ModItems {
             itemGroup.add(BLAZED_DIAMOND);
 
             // Tools & Weapons
+            itemGroup.add(BLAZE_SWORD);
             itemGroup.add(BLAZE_PICKAXE);
 
             // Armor

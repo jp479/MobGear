@@ -25,6 +25,7 @@ public class MobGearModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLAZED_DIAMOND, Models.GENERATED);
 
         // Tools & Weapons
+        itemModelGenerator.register(ModItems.BLAZE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLAZE_PICKAXE, Models.HANDHELD);
 
         // Armor

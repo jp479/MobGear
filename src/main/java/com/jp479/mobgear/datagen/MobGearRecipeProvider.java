@@ -38,6 +38,16 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
 
                 // Tools & Weapons
+                createShaped(RecipeCategory.COMBAT, ModItems.BLAZE_SWORD, 1)
+                        .pattern(" B ")
+                        .pattern(" B " )
+                        .pattern(" R ")
+                        .input('B', ModItems.BLAZED_DIAMOND)
+                        .input('R', Items.BLAZE_ROD)
+                        .group("multi_bench")
+                        .criterion(hasItem(ModItems.BLAZED_DIAMOND), conditionsFromItem(ModItems.BLAZED_DIAMOND))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.TOOLS, ModItems.BLAZE_PICKAXE, 1)
                         .pattern("BBB")
                         .pattern(" R ")
