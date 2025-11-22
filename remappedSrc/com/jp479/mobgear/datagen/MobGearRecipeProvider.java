@@ -27,7 +27,7 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                 RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
 
                 // Items
-                createShaped(RecipeCategory.COMBAT, ModItems.BLAZED_DIAMOND, 1)
+                createShaped(RecipeCategory.MISC, ModItems.BLAZED_DIAMOND, 1)
                         .pattern(" B ")
                         .pattern("BDB")
                         .pattern(" B ")
@@ -37,11 +37,11 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.BLAZE_POWDER), conditionsFromItem(Items.BLAZE_POWDER))
                         .offerTo(exporter);
 
-                // Tools & Weapons
+                // Weapons & Tools
                 createShaped(RecipeCategory.TOOLS, ModItems.BLAZE_PICKAXE, 1)
                         .pattern("BBB")
                         .pattern(" R ")
-                        .pattern(" R ")
+                        .pattern(" R" )
                         .input('B', ModItems.BLAZED_DIAMOND)
                         .input('R', Items.BLAZE_ROD)
                         .group("multi_bench")

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blazed_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mobgear:blazed_diamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mobgear:blaze_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blazed_diamond"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mobgear:blaze_pickaxe"
+    ]
+  }
+}

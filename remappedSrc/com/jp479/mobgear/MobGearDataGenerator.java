@@ -12,9 +12,9 @@ public class MobGearDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
+		pack.addProvider(MobGearItemTagProvider::new);
 		pack.addProvider(MobGearRecipeProvider::new);
 		pack.addProvider(MobGearMobLootTableProvider::new);
 		pack.addProvider(MobGearModelProvider::new);
-		pack.addProvider(MobGearItemTagProvider::new);
 	}
 }

@@ -1,7 +1,6 @@
 package com.jp479.mobgear.item;
 
 import com.jp479.mobgear.MobGear;
-import com.jp479.mobgear.util.ModTags;
 import net.minecraft.item.Item;
 import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.EquipmentAsset;
@@ -33,7 +32,7 @@ public class ModArmorMaterials {
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
             0.0f,
             0.0f,
-            ModTags.Items.BAT_EAR_REPAIR,
+            REPAIRS_BAT_HELMET,
             BAT_HELMET_MATERIAL_KEY
     );
 }

@@ -2,7 +2,6 @@ package com.jp479.mobgear;
 
 import com.jp479.mobgear.effect.ModEffects;
 import com.jp479.mobgear.item.ModItems;
-import com.jp479.mobgear.util.BlazePickaxeAutoSmeltHandler;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -16,6 +15,5 @@ public class MobGear implements ModInitializer {
 	public void onInitialize() {
 		ModItems.initialize();
 		ModEffects.initialize();
-		BlazePickaxeAutoSmeltHandler.initialize();
 	}
 }

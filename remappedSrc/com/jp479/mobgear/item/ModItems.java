@@ -30,8 +30,7 @@ public class ModItems {
     public static final Item BLAZED_DIAMOND = register(
             "blazed_diamond",
             Item::new,
-            new Item.Settings()
-    );
+            new Item.Settings());
 
     // Weapons & Tools
     public static final BlazePickaxe BLAZE_PICKAXE = (BlazePickaxe) register(
@@ -73,8 +72,8 @@ public class ModItems {
             itemGroup.add(BAT_EAR);
             itemGroup.add(BLAZED_DIAMOND);
 
-            // Tools & Weapons
-            itemGroup.add(BLAZE_PICKAXE);
+            // Weapons & Tools
+            itemGroup.add((BLAZE_PICKAXE));
 
             // Armor
             itemGroup.add(BAT_HELMET);
