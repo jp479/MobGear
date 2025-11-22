@@ -1,18 +1,11 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "group": "multi_bench",
-  "key": {
-    "B": "minecraft:blaze_powder",
-    "D": "minecraft:diamond"
-  },
-  "pattern": [
-    " B ",
-    "BDB",
-    " B "
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "mobgear:blazed_diamond_block"
   ],
   "result": {
-    "count": 1,
+    "count": 9,
     "id": "mobgear:blazed_diamond"
   }
 }

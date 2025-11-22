@@ -1,9 +1,12 @@
 // 1.21.10	-999999999-01-01T00:00:00	Mob Gear/Model Definitions
+63ddfc718e21f897942bde0bc851f291d12340d4 assets/mobgear/blockstates/blazed_diamond_block.json
 4586c8634b6890bb680e1228f8250ed3ea0507d0 assets/mobgear/items/bat_ear.json
 39de9a6d9ec53d41d282e2f8e9013f3c7736e2c3 assets/mobgear/items/bat_helmet.json
 658c46e92c693bd86fe116aa04b537fd1bd3c147 assets/mobgear/items/blaze_pickaxe.json
 56791155c8bb9b04306b8ea32fbdb2221f1e95a4 assets/mobgear/items/blaze_sword.json
 9f026b2402dbbf1929a43680510af8d90fcdfc3b assets/mobgear/items/blazed_diamond.json
+e2373f4c85e9761d7d7f91e599c04a1bb9e3d7cb assets/mobgear/items/blazed_diamond_block.json
+f7b0c097d9d2cccb2f5d7a69b62cb9bd3327f5b5 assets/mobgear/models/block/blazed_diamond_block.json
 397af471f160b48dbb919913ec4ba1eb343863ed assets/mobgear/models/item/bat_ear.json
 22f8311026e4f16c39fc8c0a1299e79be19242b3 assets/mobgear/models/item/bat_helmet.json
 ae8b5c67017bc5e7eb6c1512d0e67d1fbf8791f4 assets/mobgear/models/item/blaze_pickaxe.json

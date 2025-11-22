@@ -1,5 +1,6 @@
 package com.jp479.mobgear;
 
+import com.jp479.mobgear.block.ModBlocks;
 import com.jp479.mobgear.effect.ModEffects;
 import com.jp479.mobgear.item.ModItems;
 import com.jp479.mobgear.util.BlazePickaxeAutoSmeltHandler;
@@ -14,6 +15,7 @@ public class MobGear implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.initialize();
 		ModItems.initialize();
 		ModEffects.initialize();
 		BlazePickaxeAutoSmeltHandler.initialize();

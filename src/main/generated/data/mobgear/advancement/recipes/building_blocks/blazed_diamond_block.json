@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blaze_powder": {
+    "has_blazed_diamond": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blaze_powder"
+            "items": "mobgear:blazed_diamond"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mobgear:blazed_diamond"
+        "recipe": "mobgear:blazed_diamond_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_blaze_powder"
+      "has_blazed_diamond"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mobgear:blazed_diamond"
+      "mobgear:blazed_diamond_block"
     ]
   }
 }

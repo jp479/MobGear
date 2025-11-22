@@ -2,6 +2,8 @@ package com.jp479.mobgear.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
+import com.jp479.mobgear.MobGear;
+import com.jp479.mobgear.block.ModBlocks;
 import com.jp479.mobgear.item.ModItems;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
@@ -13,6 +15,7 @@ import net.minecraft.registry.RegistryWrapper;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.util.Identifier;
 
 public class MobGearRecipeProvider extends FabricRecipeProvider {
     public MobGearRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -26,8 +29,11 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
             public void generate() {
                 RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
 
+                // Blocks
+                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.BLAZED_DIAMOND, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZED_DIAMOND_BLOCK);
+
                 // Items
-                createShaped(RecipeCategory.COMBAT, ModItems.BLAZED_DIAMOND, 1)
+                createShaped(RecipeCategory.MISC, ModItems.BLAZED_DIAMOND, 1)
                         .pattern(" B ")
                         .pattern("BDB")
                         .pattern(" B ")
@@ -35,7 +41,7 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .input('D', Items.DIAMOND)
                         .group("multi_bench")
                         .criterion(hasItem(Items.BLAZE_POWDER), conditionsFromItem(Items.BLAZE_POWDER))
-                        .offerTo(exporter);
+                        .offerTo(exporter, String.valueOf(Identifier.of(MobGear.MOD_ID, "blazed_diamond_from_blaze_and_diamond")));
 
                 // Tools & Weapons
                 createShaped(RecipeCategory.COMBAT, ModItems.BLAZE_SWORD, 1)

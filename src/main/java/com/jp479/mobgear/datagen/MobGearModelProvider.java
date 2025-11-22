@@ -1,5 +1,6 @@
 package com.jp479.mobgear.datagen;
 
+import com.jp479.mobgear.block.ModBlocks;
 import com.jp479.mobgear.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -15,7 +16,7 @@ public class MobGearModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLAZED_DIAMOND_BLOCK);
     }
 
     @Override

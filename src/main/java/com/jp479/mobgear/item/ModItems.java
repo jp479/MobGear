@@ -72,6 +72,8 @@ public class ModItems {
 
     // Initializing method
     public static void initialize() {
+        MobGear.LOGGER.info("Registering Mod Items for " + MobGear.MOD_ID);
+
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
