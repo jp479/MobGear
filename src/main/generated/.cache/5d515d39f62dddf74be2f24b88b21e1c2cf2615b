@@ -1,2 +1,3 @@
 // 1.21.10	-999999999-01-01T00:00:00	Mob Gear/Entity Loot Tables
 d2b923213749f5175025e57874c0cfdc89fc6fb3 data/minecraft/loot_table/entities/bat.json
+aec0a33850cd2c8c85fb917fcac7a1d737ecbb02 data/minecraft/loot_table/entities/wither_skeleton.json

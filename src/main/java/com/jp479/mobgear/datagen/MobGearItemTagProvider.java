@@ -45,5 +45,9 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
                 .add(ModItems.BAT_HELMET);
+
+        valueLookupBuilder(ItemTags.BOW_ENCHANTABLE)
+                .add(ModItems.SKELETON_BOW)
+                .add(ModItems.WITHER_SKELETON_BOW);
     }
 }

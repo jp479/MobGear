@@ -1,9 +1,8 @@
 package com.jp479.mobgear.item;
 
 import com.jp479.mobgear.MobGear;
-import com.jp479.mobgear.item.custom.BatHelmet;
-import com.jp479.mobgear.item.custom.BlazePickaxe;
-import com.jp479.mobgear.item.custom.BlazeSword;
+import com.jp479.mobgear.block.ModBlocks;
+import com.jp479.mobgear.item.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -28,6 +27,11 @@ public class ModItems {
             "bat_ear",
             Item::new,
             new Item.Settings().food(POISON_FOOD_COMPONENT, BAT_EAR_POISON_COMPONENT));
+    public static final Item WITHER_BONE = register(
+            "wither_bone",
+            Item::new,
+            new Item.Settings()
+    );
     public static final Item BLAZED_DIAMOND = register(
             "blazed_diamond",
             Item::new,
@@ -44,6 +48,16 @@ public class ModItems {
             "blaze_pickaxe",
             BlazePickaxe::new,
             new Item.Settings().pickaxe(ModToolMaterials.BLAZE_DIAMOND_MATERIAL, 1.0f, -2.8f)
+    );
+    public static final SkeletonBow SKELETON_BOW = (SkeletonBow) register(
+            "skeleton_bow",
+            SkeletonBow::new,
+            new Item.Settings().maxDamage(448).enchantable(1)
+    );
+    public static final WitherSkeletonBow WITHER_SKELETON_BOW = (WitherSkeletonBow) register(
+            "wither_skeleton_bow",
+            WitherSkeletonBow::new,
+            new Item.Settings().maxDamage(512).enchantable(1)
     );
 
     // Armor
@@ -72,18 +86,24 @@ public class ModItems {
 
     // Initializing method
     public static void initialize() {
-        MobGear.LOGGER.info("Registering Mod Items for " + MobGear.MOD_ID);
+        MobGear.LOGGER.info("Registering mod items for " + MobGear.MOD_ID);
 
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+            // Blocks
+            itemGroup.add(ModBlocks.BLAZED_DIAMOND_BLOCK);
+
             // Items
             itemGroup.add(BAT_EAR);
+            itemGroup.add(WITHER_BONE);
             itemGroup.add(BLAZED_DIAMOND);
 
             // Tools & Weapons
             itemGroup.add(BLAZE_SWORD);
             itemGroup.add(BLAZE_PICKAXE);
+            itemGroup.add(SKELETON_BOW);
+            itemGroup.add(WITHER_SKELETON_BOW);
 
             // Armor
             itemGroup.add(BAT_HELMET);

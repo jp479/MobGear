@@ -22,6 +22,8 @@ public class ModEffects {
     }
 
     public static void initialize() {
+        MobGear.LOGGER.info("Registering mod effects for " + MobGear.MOD_ID);
+
         ECHOLOCATION = Registry.registerReference(
                 Registries.STATUS_EFFECT,
                 Identifier.of(MobGear.MOD_ID, "echolocation"),

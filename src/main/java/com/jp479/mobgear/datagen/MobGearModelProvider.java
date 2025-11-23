@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
+import net.minecraft.item.Item;
 
 public class MobGearModelProvider extends FabricModelProvider {
 
@@ -23,11 +24,14 @@ public class MobGearModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Items
         itemModelGenerator.register(ModItems.BAT_EAR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WITHER_BONE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLAZED_DIAMOND, Models.GENERATED);
 
         // Tools & Weapons
         itemModelGenerator.register(ModItems.BLAZE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLAZE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.registerBow(ModItems.SKELETON_BOW);
+        itemModelGenerator.registerBow(ModItems.WITHER_SKELETON_BOW);
 
         // Armor
         itemModelGenerator.register(ModItems.BAT_HELMET, Models.GENERATED);

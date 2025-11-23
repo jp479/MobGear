@@ -1,5 +1,6 @@
 package com.jp479.mobgear.util;
 
+import com.jp479.mobgear.MobGear;
 import com.jp479.mobgear.item.custom.BlazePickaxe;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.minecraft.block.Block;
@@ -16,6 +17,8 @@ import java.util.Optional;
 
 public class BlazePickaxeAutoSmeltHandler {
     public static void initialize() {
+        MobGear.LOGGER.info("Registering blaze pickaxe auto smelt handler for " + MobGear.MOD_ID);
+
         PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, blockEntity) -> {
             ItemStack tool = player.getMainHandStack();
 

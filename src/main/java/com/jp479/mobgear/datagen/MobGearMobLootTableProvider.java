@@ -24,13 +24,21 @@ public class MobGearMobLootTableProvider extends FabricEntityLootTableProvider {
 
     @Override
     public void generate() {
-        LootPool pool = LootPool.builder()
+        LootPool batPool = LootPool.builder()
                 .rolls(ConstantLootNumberProvider.create(1))
                 .conditionally(RandomChanceLootCondition.builder(0.1f))
                 .with(ItemEntry.builder(ModItems.BAT_EAR)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 1f))))
                 .build();
 
-        register(EntityType.BAT, LootTable.builder().pool(pool));
+        LootPool witherSkeletonPool = LootPool.builder()
+                .rolls(ConstantLootNumberProvider.create(1))
+                .conditionally(RandomChanceLootCondition.builder(0.1f))
+                .with(ItemEntry.builder(ModItems.WITHER_BONE)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 1f))))
+                .build();
+
+        register(EntityType.BAT, LootTable.builder().pool(batPool));
+        register(EntityType.WITHER_SKELETON, LootTable.builder().pool(witherSkeletonPool));
     }
 }

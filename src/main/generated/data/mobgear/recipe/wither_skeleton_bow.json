@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "B": "mobgear:skeleton_bow",
+    "S": "minecraft:string",
+    "W": "mobgear:wither_bone"
+  },
+  "pattern": [
+    " WS",
+    "WBS",
+    " WS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mobgear:wither_skeleton_bow"
+  }
+}

@@ -1,4 +1,5 @@
 // 1.21.10	-999999999-01-01T00:00:00	Mob Gear/Tags for minecraft:item
+03b8d486111c5a000e854e70cfae3e43fc3f7a64 data/minecraft/tags/item/enchantable/bow.json
 58b30626e5bb73c2870267bce905b2ea9cdb4cc2 data/minecraft/tags/item/enchantable/fire_aspect.json
 0a6277e7169b20988f91b095d39f370c2d1113e4 data/minecraft/tags/item/enchantable/head_armor.json
 e79eb95f26c7ac6848348ce9ae746ee5c1cd5b09 data/minecraft/tags/item/enchantable/mining.json

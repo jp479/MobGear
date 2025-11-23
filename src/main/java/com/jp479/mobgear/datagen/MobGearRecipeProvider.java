@@ -33,6 +33,12 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.BLAZED_DIAMOND, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZED_DIAMOND_BLOCK);
 
                 // Items
+                createShapeless(RecipeCategory.MISC, ModItems.WITHER_BONE, 3)
+                        .input(Items.WITHER_SKELETON_SKULL)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.WITHER_SKELETON_SKULL), conditionsFromItem(Items.WITHER_SKELETON_SKULL))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.MISC, ModItems.BLAZED_DIAMOND, 1)
                         .pattern(" B ")
                         .pattern("BDB")
@@ -62,6 +68,27 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .input('R', Items.BLAZE_ROD)
                         .group("multi_bench")
                         .criterion(hasItem(ModItems.BLAZED_DIAMOND), conditionsFromItem(ModItems.BLAZED_DIAMOND))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.SKELETON_BOW, 1)
+                        .pattern(" BS")
+                        .pattern("B S")
+                        .pattern(" BS")
+                        .input('B', Items.BONE)
+                        .input('S', Items.STRING)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.BONE), conditionsFromItem(Items.BONE))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.WITHER_SKELETON_BOW, 1)
+                        .pattern(" WS")
+                        .pattern("WBS")
+                        .pattern(" WS")
+                        .input('W', ModItems.WITHER_BONE)
+                        .input('S', Items.STRING)
+                        .input('B', ModItems.SKELETON_BOW)
+                        .group("multi_bench")
+                        .criterion(hasItem(ModItems.WITHER_BONE), conditionsFromItem(ModItems.WITHER_BONE))
                         .offerTo(exporter);
 
                 // Armor
