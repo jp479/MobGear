@@ -32,6 +32,11 @@ public class ModItems {
             Item::new,
             new Item.Settings()
     );
+    public static final Item CHORUS_STICK = register(
+            "chorus_stick",
+            Item::new,
+            new Item.Settings()
+    );
     public static final Item BLAZED_DIAMOND = register(
             "blazed_diamond",
             Item::new,
@@ -108,6 +113,7 @@ public class ModItems {
             // Items
             itemGroup.add(BAT_EAR);
             itemGroup.add(WITHER_BONE);
+            itemGroup.add(CHORUS_STICK);
             itemGroup.add(BLAZED_DIAMOND);
             itemGroup.add(ENDER_IRON_INGOT);
 

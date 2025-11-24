@@ -47,6 +47,12 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.WITHER_SKELETON_SKULL), conditionsFromItem(Items.WITHER_SKELETON_SKULL))
                         .offerTo(exporter);
 
+                createShapeless(RecipeCategory.MISC, ModItems.CHORUS_STICK, 1)
+                        .input(Items.STICK)
+                        .input(Items.POPPED_CHORUS_FRUIT)
+                        .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
+                        .offerTo(exporter);;
+
                 createShaped(RecipeCategory.MISC, ModItems.BLAZED_DIAMOND, 1)
                         .pattern(" B ")
                         .pattern("BDB")
@@ -83,7 +89,7 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .pattern(" E " )
                         .pattern(" S ")
                         .input('E', ModItems.ENDER_IRON_INGOT)
-                        .input('S', Items.END_STONE)
+                        .input('S', ModItems.CHORUS_STICK)
                         .group("multi_bench")
                         .criterion(hasItem(ModItems.ENDER_IRON_INGOT), conditionsFromItem(ModItems.ENDER_IRON_INGOT))
                         .offerTo(exporter);

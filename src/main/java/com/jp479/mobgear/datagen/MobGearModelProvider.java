@@ -25,6 +25,7 @@ public class MobGearModelProvider extends FabricModelProvider {
         // Items
         itemModelGenerator.register(ModItems.BAT_EAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHER_BONE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CHORUS_STICK, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLAZED_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_IRON_INGOT, Models.GENERATED);
 

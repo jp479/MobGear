@@ -4,7 +4,7 @@
   "group": "multi_bench",
   "key": {
     "E": "mobgear:ender_iron_ingot",
-    "S": "minecraft:end_stone"
+    "S": "mobgear:chorus_stick"
   },
   "pattern": [
     " E ",

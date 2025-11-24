@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:popped_chorus_fruit"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mobgear:chorus_stick"
+  }
+}
