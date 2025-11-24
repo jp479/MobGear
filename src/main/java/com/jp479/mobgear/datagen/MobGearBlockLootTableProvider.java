@@ -15,5 +15,6 @@ public class MobGearBlockLootTableProvider extends FabricBlockLootTableProvider 
     @Override
     public void generate() {
         addDrop(ModBlocks.BLAZED_DIAMOND_BLOCK);
+        addDrop(ModBlocks.ENDER_IRON_BLOCK);
     }
 }

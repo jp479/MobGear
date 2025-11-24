@@ -30,7 +30,15 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                 RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
 
                 // Blocks
-                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.BLAZED_DIAMOND, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZED_DIAMOND_BLOCK);
+                offerReversibleCompactingRecipes(
+                        RecipeCategory.MISC, ModItems.BLAZED_DIAMOND,
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZED_DIAMOND_BLOCK
+                );
+
+                offerReversibleCompactingRecipes(
+                        RecipeCategory.MISC, ModItems.ENDER_IRON_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_IRON_BLOCK
+                );
 
                 // Items
                 createShapeless(RecipeCategory.MISC, ModItems.WITHER_BONE, 3)
@@ -49,6 +57,16 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.BLAZE_POWDER), conditionsFromItem(Items.BLAZE_POWDER))
                         .offerTo(exporter, String.valueOf(Identifier.of(MobGear.MOD_ID, "blazed_diamond_from_blaze_and_diamond")));
 
+                createShaped(RecipeCategory.MISC, ModItems.ENDER_IRON_INGOT, 1)
+                        .pattern(" E ")
+                        .pattern("EIE")
+                        .pattern(" E ")
+                        .input('E', Items.ENDER_PEARL)
+                        .input('I', Items.IRON_INGOT)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
+                        .offerTo(exporter, String.valueOf(Identifier.of(MobGear.MOD_ID, "ender_iron_from_ender_and_iron")));
+
                 // Tools & Weapons
                 createShaped(RecipeCategory.COMBAT, ModItems.BLAZE_SWORD, 1)
                         .pattern(" B ")
@@ -58,6 +76,16 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .input('R', Items.BLAZE_ROD)
                         .group("multi_bench")
                         .criterion(hasItem(ModItems.BLAZED_DIAMOND), conditionsFromItem(ModItems.BLAZED_DIAMOND))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.ENDERMAN_SWORD, 1)
+                        .pattern(" E ")
+                        .pattern(" E " )
+                        .pattern(" S ")
+                        .input('E', ModItems.ENDER_IRON_INGOT)
+                        .input('S', Items.END_STONE)
+                        .group("multi_bench")
+                        .criterion(hasItem(ModItems.ENDER_IRON_INGOT), conditionsFromItem(ModItems.ENDER_IRON_INGOT))
                         .offerTo(exporter);
 
                 createShaped(RecipeCategory.TOOLS, ModItems.BLAZE_PICKAXE, 1)

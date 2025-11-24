@@ -22,6 +22,9 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.BLAZED_DIAMOND_REPAIR)
                 .add(ModItems.BLAZED_DIAMOND);
 
+        valueLookupBuilder(ModTags.Items.ENDER_IRON_REPAIR)
+                .add(ModItems.ENDER_IRON_INGOT);
+
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(ModItems.BLAZE_PICKAXE);
 
@@ -29,16 +32,20 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BLAZE_PICKAXE);
 
         valueLookupBuilder(ItemTags.SWORDS)
-                .add(ModItems.BLAZE_SWORD);
+                .add(ModItems.BLAZE_SWORD)
+                .add(ModItems.ENDERMAN_SWORD);
 
         valueLookupBuilder(ItemTags.SWORD_ENCHANTABLE)
-                .add(ModItems.BLAZE_SWORD);
+                .add(ModItems.BLAZE_SWORD)
+                .add(ModItems.ENDERMAN_SWORD);
 
         valueLookupBuilder(ItemTags.FIRE_ASPECT_ENCHANTABLE)
-                .add(ModItems.BLAZE_SWORD);
+                .add(ModItems.BLAZE_SWORD)
+                .add(ModItems.ENDERMAN_SWORD);
 
         valueLookupBuilder(ItemTags.SHARP_WEAPON_ENCHANTABLE)
-                .add(ModItems.BLAZE_SWORD);
+                .add(ModItems.BLAZE_SWORD)
+                .add(ModItems.ENDERMAN_SWORD);
 
         valueLookupBuilder(ItemTags.HEAD_ARMOR)
                 .add(ModItems.BAT_HELMET);

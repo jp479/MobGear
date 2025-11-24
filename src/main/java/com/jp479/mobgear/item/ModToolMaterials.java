@@ -8,9 +8,17 @@ public class ModToolMaterials {
     public static final ToolMaterial BLAZE_DIAMOND_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
             1796,
-            8.5f,
-            3.0f,
+            8.0f,
+            4.0f,
             10,
             ModTags.Items.BLAZED_DIAMOND_REPAIR
+    );
+    public static final ToolMaterial ENDER_IRON_MATERIAL = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+            1796,
+            8.0f,
+            4.0f,
+            10,
+            ModTags.Items.ENDER_IRON_REPAIR
     );
 }

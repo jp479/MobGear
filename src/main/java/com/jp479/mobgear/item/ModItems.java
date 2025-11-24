@@ -37,12 +37,22 @@ public class ModItems {
             Item::new,
             new Item.Settings()
     );
+    public static final Item ENDER_IRON_INGOT = register(
+            "ender_iron_ingot",
+            Item::new,
+            new Item.Settings()
+    );
 
     // Tools & Weapons
     public static final BlazeSword BLAZE_SWORD = (BlazeSword)  register(
             "blaze_sword",
             BlazeSword::new,
             new Item.Settings().sword(ModToolMaterials.BLAZE_DIAMOND_MATERIAL, 3.0f, -2.4f)
+    );
+    public static final EndermanSword ENDERMAN_SWORD = (EndermanSword) register(
+            "enderman_sword",
+            EndermanSword::new,
+            new Item.Settings().sword(ModToolMaterials.ENDER_IRON_MATERIAL, 3.0f, -2.4f)
     );
     public static final BlazePickaxe BLAZE_PICKAXE = (BlazePickaxe) register(
             "blaze_pickaxe",
@@ -93,14 +103,17 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             // Blocks
             itemGroup.add(ModBlocks.BLAZED_DIAMOND_BLOCK);
+            itemGroup.add(ModBlocks.ENDER_IRON_BLOCK);
 
             // Items
             itemGroup.add(BAT_EAR);
             itemGroup.add(WITHER_BONE);
             itemGroup.add(BLAZED_DIAMOND);
+            itemGroup.add(ENDER_IRON_INGOT);
 
             // Tools & Weapons
             itemGroup.add(BLAZE_SWORD);
+            itemGroup.add(ENDERMAN_SWORD);
             itemGroup.add(BLAZE_PICKAXE);
             itemGroup.add(SKELETON_BOW);
             itemGroup.add(WITHER_SKELETON_BOW);

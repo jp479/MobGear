@@ -1,11 +1,14 @@
 {
   "block.mobgear.blazed_diamond_block": "Blazed Diamond Block",
+  "block.mobgear.ender_iron_block": "Ender Iron Block",
 
   "item.mobgear.bat_ear":"Bat Ear",
   "item.mobgear.wither_bone": "Wither Bone",
   "item.mobgear.blazed_diamond": "Blazed Diamond",
+  "item.mobgear.ender_iron_ingot": "Ender Iron Ingot",
 
   "item.mobgear.blaze_sword": "Blaze Sword",
+  "item.mobgear.enderman_sword": "Enderman Sword",
   "item.mobgear.blaze_pickaxe": "Blaze Pickaxe",
   "item.mobgear.skeleton_bow": "Skeleton Bow",
   "item.mobgear.wither_skeleton_bow": "Wither Skeleton Bow",

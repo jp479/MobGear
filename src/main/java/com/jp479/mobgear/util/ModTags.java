@@ -10,6 +10,7 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> BAT_EAR_REPAIR = createTag("bat_ear_repair");
         public static final TagKey<Item> BLAZED_DIAMOND_REPAIR = createTag("blazed_diamond_repair");
+        public static final TagKey<Item> ENDER_IRON_REPAIR = createTag("ender_iron_repair");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MobGear.MOD_ID, name));

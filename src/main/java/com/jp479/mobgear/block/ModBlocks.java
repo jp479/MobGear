@@ -1,8 +1,6 @@
 package com.jp479.mobgear.block;
 
 import com.jp479.mobgear.MobGear;
-import com.jp479.mobgear.item.ModItems;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -19,6 +17,14 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final Block BLAZED_DIAMOND_BLOCK = register(
             "blazed_diamond_block",
+            properties -> new Block(properties
+                    .strength(10.0f)
+                    .resistance(6.0f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.METAL))
+    );
+    public static final Block ENDER_IRON_BLOCK = register(
+            "ender_iron_block",
             properties -> new Block(properties
                     .strength(10.0f)
                     .resistance(6.0f)

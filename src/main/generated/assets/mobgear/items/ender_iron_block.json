@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "mobgear:block/ender_iron_block"
+  }
+}

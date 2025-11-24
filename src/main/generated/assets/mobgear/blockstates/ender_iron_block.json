@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mobgear:block/ender_iron_block"
+    }
+  }
+}

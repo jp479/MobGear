@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "mobgear:blazed_diamond_block"
+    "mobgear:ender_iron_block"
   ],
   "result": {
     "count": 9,
-    "id": "mobgear:blazed_diamond"
+    "id": "mobgear:ender_iron_ingot"
   }
 }
