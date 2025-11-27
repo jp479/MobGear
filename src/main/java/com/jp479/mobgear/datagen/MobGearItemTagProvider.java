@@ -4,6 +4,7 @@ import com.jp479.mobgear.item.ModItems;
 import com.jp479.mobgear.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -19,6 +20,12 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.BAT_EAR_REPAIR)
                 .add(ModItems.BAT_EAR);
 
+        valueLookupBuilder(ModTags.Items.SLIME_BALL_REPAIR)
+                .add(Items.SLIME_BALL);
+
+        valueLookupBuilder(ModTags.Items.MAGMA_CREAM_REPAIR)
+                .add(Items.MAGMA_CREAM);
+
         valueLookupBuilder(ModTags.Items.BLAZED_DIAMOND_REPAIR)
                 .add(ModItems.BLAZED_DIAMOND);
 
@@ -27,6 +34,16 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(ModItems.BLAZE_PICKAXE);
+
+        valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.BLAZE_PICKAXE)
+                .add(ModItems.BLAZE_SWORD)
+                .add(ModItems.ENDERMAN_SWORD)
+                .add(ModItems.SKELETON_BOW)
+                .add(ModItems.WITHER_SKELETON_BOW)
+                .add(ModItems.BAT_HELMET)
+                .add(ModItems.SLIME_LEGGINGS)
+                .add(ModItems.MAGMA_CUBE_LEGGINGS);
 
         valueLookupBuilder(ItemTags.MINING_ENCHANTABLE)
                 .add(ModItems.BLAZE_PICKAXE);
@@ -52,6 +69,14 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
                 .add(ModItems.BAT_HELMET);
+
+        valueLookupBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.SLIME_LEGGINGS)
+                .add(ModItems.MAGMA_CUBE_LEGGINGS);
+
+        valueLookupBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(ModItems.SLIME_LEGGINGS)
+                .add(ModItems.MAGMA_CUBE_LEGGINGS);
 
         valueLookupBuilder(ItemTags.BOW_ENCHANTABLE)
                 .add(ModItems.SKELETON_BOW)

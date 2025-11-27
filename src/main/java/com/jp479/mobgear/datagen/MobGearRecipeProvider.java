@@ -133,7 +133,27 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .input('B', ModItems.BAT_EAR)
                         .input('L', Items.LEATHER)
                         .group("multi_bench")
-                        .criterion(hasItem(ModItems.BAT_HELMET), conditionsFromItem(ModItems.BAT_HELMET))
+                        .criterion(hasItem(ModItems.BAT_EAR), conditionsFromItem(ModItems.BAT_EAR))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.SLIME_LEGGINGS, 1)
+                        .pattern("SSS")
+                        .pattern("SCS")
+                        .pattern("S S")
+                        .input('S', Items.SLIME_BALL)
+                        .input('C', Items.CHAINMAIL_LEGGINGS)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.MAGMA_CUBE_LEGGINGS, 1)
+                        .pattern("MMM")
+                        .pattern("MIM")
+                        .pattern("M M")
+                        .input('M', Items.MAGMA_CREAM)
+                        .input('I', Items.IRON_LEGGINGS)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.MAGMA_CREAM), conditionsFromItem(Items.MAGMA_CREAM))
                         .offerTo(exporter);
             }
         };

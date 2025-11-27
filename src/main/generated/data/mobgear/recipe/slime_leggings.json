@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "C": "minecraft:chainmail_leggings",
+    "S": "minecraft:slime_ball"
+  },
+  "pattern": [
+    "SSS",
+    "SCS",
+    "S S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mobgear:slime_leggings"
+  }
+}

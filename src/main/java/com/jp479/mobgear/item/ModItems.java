@@ -80,7 +80,19 @@ public class ModItems {
             "bat_helmet",
             BatHelmet::new,
             new Item.Settings().armor(ModArmorMaterials.BAT_EAR_MATERIAL, EquipmentType.HELMET)
-                    .maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BASE_DURABILITY))
+                    .maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BAT_DURABILITY))
+    );
+    public static final SlimeLeggings SLIME_LEGGINGS = (SlimeLeggings) register(
+            "slime_leggings",
+            SlimeLeggings::new,
+            new Item.Settings().armor(ModArmorMaterials.SLIME_BALL_MATERIAL, EquipmentType.LEGGINGS)
+                    .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.SLIME_DURABILITY))
+    );
+    public static final MagmaCubeLeggings MAGMA_CUBE_LEGGINGS = (MagmaCubeLeggings) register(
+            "magma_cube_leggings",
+            MagmaCubeLeggings::new,
+            new Item.Settings().armor(ModArmorMaterials.MAGMA_CREAM_MATERIAL, EquipmentType.LEGGINGS)
+                    .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.MAGMA_CUBE_DURABILITY))
     );
 
     // Item group
@@ -126,6 +138,8 @@ public class ModItems {
 
             // Armor
             itemGroup.add(BAT_HELMET);
+            itemGroup.add(SLIME_LEGGINGS);
+            itemGroup.add(MAGMA_CUBE_LEGGINGS);
         });
     }
 }

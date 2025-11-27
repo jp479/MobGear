@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "I": "minecraft:iron_leggings",
+    "M": "minecraft:magma_cream"
+  },
+  "pattern": [
+    "MMM",
+    "MIM",
+    "M M"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mobgear:magma_cube_leggings"
+  }
+}

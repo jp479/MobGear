@@ -38,5 +38,7 @@ public class MobGearModelProvider extends FabricModelProvider {
 
         // Armor
         itemModelGenerator.register(ModItems.BAT_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SLIME_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGMA_CUBE_LEGGINGS, Models.GENERATED);
     }
 }
