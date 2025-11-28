@@ -3,12 +3,12 @@
   "category": "equipment",
   "group": "multi_bench",
   "key": {
-    "I": "minecraft:iron_leggings",
-    "M": "minecraft:magma_cream"
+    "M": "minecraft:magma_cream",
+    "S": "mobgear:slime_leggings"
   },
   "pattern": [
     "MMM",
-    "MIM",
+    "MSM",
     "M M"
   ],
   "result": {

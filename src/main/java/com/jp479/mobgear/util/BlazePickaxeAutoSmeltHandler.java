@@ -22,9 +22,13 @@ public class BlazePickaxeAutoSmeltHandler {
         PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, blockEntity) -> {
             ItemStack tool = player.getMainHandStack();
 
-            if (world.isClient()) return true;
+            if (world.isClient()) {
+                return true;
+            }
 
-            if (!(tool.getItem() instanceof BlazePickaxe)) return true;
+            if (!(tool.getItem() instanceof BlazePickaxe)) {
+                return true;
+            }
 
             List<ItemStack> drops = Block.getDroppedStacks(
                     state,
@@ -51,7 +55,6 @@ public class BlazePickaxeAutoSmeltHandler {
                 }
             }
 
-
             return false;
         });
     }
@@ -76,5 +79,4 @@ public class BlazePickaxeAutoSmeltHandler {
 
         return input;
     }
-
 }

@@ -148,10 +148,10 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
 
                 createShaped(RecipeCategory.COMBAT, ModItems.MAGMA_CUBE_LEGGINGS, 1)
                         .pattern("MMM")
-                        .pattern("MIM")
+                        .pattern("MSM")
                         .pattern("M M")
                         .input('M', Items.MAGMA_CREAM)
-                        .input('I', Items.IRON_LEGGINGS)
+                        .input('S', ModItems.SLIME_LEGGINGS)
                         .group("multi_bench")
                         .criterion(hasItem(Items.MAGMA_CREAM), conditionsFromItem(Items.MAGMA_CREAM))
                         .offerTo(exporter);

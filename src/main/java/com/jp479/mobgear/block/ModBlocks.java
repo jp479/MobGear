@@ -46,9 +46,5 @@ public class ModBlocks {
 
     public static void initialize() {
         MobGear.LOGGER.info("Registering mod blocks for " + MobGear.MOD_ID);
-
-//        ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
-//            itemGroup.add(BLAZED_DIAMOND_BLOCK);
-//        });
     }
 }

@@ -11,6 +11,7 @@ public class ModFoodComponents {
     public static final ConsumableComponent BAT_EAR_POISON_COMPONENT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 1), 0.15f))
             .build();
+
     public static final FoodComponent POISON_FOOD_COMPONENT = new FoodComponent.Builder()
             .alwaysEdible()
             .build();

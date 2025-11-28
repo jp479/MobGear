@@ -14,8 +14,8 @@ import java.util.Map;
 
 public class ModArmorMaterials {
     public static final int BAT_DURABILITY = 5;
-    public static final int SLIME_DURABILITY = 15;
-    public static final int MAGMA_CUBE_DURABILITY = 25;
+    public static final int SLIME_DURABILITY = 20;
+    public static final int MAGMA_CUBE_DURABILITY = 35;
 
     public static final RegistryKey<EquipmentAsset> BAT_HELMET_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(MobGear.MOD_ID, "bat_ear"));
     public static final RegistryKey<EquipmentAsset> SLIME_LEGGINGS_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(MobGear.MOD_ID, "slime_ball"));
@@ -40,13 +40,13 @@ public class ModArmorMaterials {
     public static final ArmorMaterial SLIME_BALL_MATERIAL = new ArmorMaterial(
             SLIME_DURABILITY,
             Map.of(
-                    EquipmentType.BODY, 4,
+                    EquipmentType.BODY, 5,
                     EquipmentType.HELMET, 2,
-                    EquipmentType.CHESTPLATE, 5,
-                    EquipmentType.LEGGINGS, 4,
-                    EquipmentType.BOOTS, 1
+                    EquipmentType.CHESTPLATE, 6,
+                    EquipmentType.LEGGINGS, 5,
+                    EquipmentType.BOOTS, 2
             ),
-            8,
+            10,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             0.0f,
             0.0f,
@@ -56,14 +56,14 @@ public class ModArmorMaterials {
     public static final ArmorMaterial MAGMA_CREAM_MATERIAL = new ArmorMaterial(
             MAGMA_CUBE_DURABILITY,
             Map.of(
-                    EquipmentType.BODY, 5,
-                    EquipmentType.HELMET, 2,
-                    EquipmentType.CHESTPLATE, 6,
-                    EquipmentType.LEGGINGS, 5,
-                    EquipmentType.BOOTS, 2
+                    EquipmentType.BODY, 11,
+                    EquipmentType.HELMET, 3,
+                    EquipmentType.CHESTPLATE, 8,
+                    EquipmentType.LEGGINGS, 6,
+                    EquipmentType.BOOTS, 3
             ),
             12,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             0.0f,
             0.0f,
             ModTags.Items.MAGMA_CREAM_REPAIR,
