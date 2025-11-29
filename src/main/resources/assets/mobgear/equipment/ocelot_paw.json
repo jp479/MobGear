@@ -1,0 +1,9 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mobgear:ocelot_paw"
+      }
+    ]
+  }
+}

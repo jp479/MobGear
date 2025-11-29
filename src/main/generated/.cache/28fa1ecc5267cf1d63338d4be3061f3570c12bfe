@@ -1,12 +1,14 @@
 // 1.21.10	-999999999-01-01T00:00:00	Mob Gear/Tags for minecraft:item
 03b8d486111c5a000e854e70cfae3e43fc3f7a64 data/minecraft/tags/item/enchantable/bow.json
-00e1d0cea3020180a853431e3ac87e5be6764d62 data/minecraft/tags/item/enchantable/durability.json
+0ad1a7c9af009f67499997b3a3a54d80959e595c data/minecraft/tags/item/enchantable/durability.json
 d8b2ebeabfe0e220e5168dbe1423b6c37b862d00 data/minecraft/tags/item/enchantable/fire_aspect.json
+298c135706f025410d88dfd73713fb694d9c78e4 data/minecraft/tags/item/enchantable/foot_armor.json
 0a6277e7169b20988f91b095d39f370c2d1113e4 data/minecraft/tags/item/enchantable/head_armor.json
 815bfad72bc422e74ed261c5f16d6e0964434ce5 data/minecraft/tags/item/enchantable/leg_armor.json
 e79eb95f26c7ac6848348ce9ae746ee5c1cd5b09 data/minecraft/tags/item/enchantable/mining.json
 d8b2ebeabfe0e220e5168dbe1423b6c37b862d00 data/minecraft/tags/item/enchantable/sharp_weapon.json
 d8b2ebeabfe0e220e5168dbe1423b6c37b862d00 data/minecraft/tags/item/enchantable/sword.json
+298c135706f025410d88dfd73713fb694d9c78e4 data/minecraft/tags/item/foot_armor.json
 0a6277e7169b20988f91b095d39f370c2d1113e4 data/minecraft/tags/item/head_armor.json
 815bfad72bc422e74ed261c5f16d6e0964434ce5 data/minecraft/tags/item/leg_armor.json
 e79eb95f26c7ac6848348ce9ae746ee5c1cd5b09 data/minecraft/tags/item/pickaxes.json
@@ -15,4 +17,5 @@ c5ad64b97444cc0957f60e2bad16771835948b97 data/mobgear/tags/item/bat_ear_repair.j
 1298f78d618a62b5714ee6d9f6c0a8b4b756cb4f data/mobgear/tags/item/blazed_diamond_repair.json
 350d680e3cfc5a82d5f8828b198052e021fb7879 data/mobgear/tags/item/ender_iron_repair.json
 a2b4925fa4fb5d4137041a0d793060f8a6cce460 data/mobgear/tags/item/magma_cream_repair.json
+b6eb72c83fef2d85319f60a9133fbf0e82856a6c data/mobgear/tags/item/ocelot_paw_repair.json
 105727dc444ddc319293c250e6c64f197b4ba151 data/mobgear/tags/item/slime_ball_repair.json

@@ -14,14 +14,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 import java.util.function.Function;
 
-import static com.jp479.mobgear.item.ModFoodComponents.BAT_EAR_POISON_COMPONENT;
-import static com.jp479.mobgear.item.ModFoodComponents.POISON_FOOD_COMPONENT;
+import static com.jp479.mobgear.item.ModFoodComponents.*;
 
 public class ModItems {
     // Items
@@ -29,6 +27,11 @@ public class ModItems {
             "bat_ear",
             Item::new,
             new Item.Settings().food(POISON_FOOD_COMPONENT, BAT_EAR_POISON_COMPONENT));
+    public static final Item OCELOT_PAW = register(
+            "ocelot_paw",
+            Item::new,
+            new Item.Settings().food(SLOWNESS_FOOD_COMPONENT, OCELOT_PAW_SLOWNESS_COMPONENT)
+    );
     public static final Item WITHER_BONE = register(
             "wither_bone",
             Item::new,
@@ -104,6 +107,13 @@ public class ModItems {
                     .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.MAGMA_CUBE_DURABILITY))
                     .rarity(Rarity.EPIC)
     );
+    public static final OcelotBoots OCELOT_BOOTS = (OcelotBoots) register(
+            "ocelot_boots",
+            OcelotBoots::new,
+            new Item.Settings().armor(ModArmorMaterials.OCELOT_PAW_MATERIAL, EquipmentType.BOOTS)
+                    .maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.OCELOT_DURABILITY))
+                    .rarity(Rarity.UNCOMMON)
+    );
 
     // Item group
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(MobGear.MOD_ID, "item_group"));
@@ -134,6 +144,7 @@ public class ModItems {
 
             // Items
             itemGroup.add(BAT_EAR);
+            itemGroup.add(OCELOT_PAW);
             itemGroup.add(WITHER_BONE);
             itemGroup.add(CHORUS_STICK);
             itemGroup.add(BLAZED_DIAMOND);
@@ -150,6 +161,7 @@ public class ModItems {
             itemGroup.add(BAT_HELMET);
             itemGroup.add(SLIME_LEGGINGS);
             itemGroup.add(MAGMA_CUBE_LEGGINGS);
+            itemGroup.add(OCELOT_BOOTS);
         });
     }
 }

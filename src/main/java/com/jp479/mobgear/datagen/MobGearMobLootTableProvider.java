@@ -31,6 +31,13 @@ public class MobGearMobLootTableProvider extends FabricEntityLootTableProvider {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 1f))))
                 .build();
 
+        LootPool ocelotPool = LootPool.builder()
+                .rolls(ConstantLootNumberProvider.create(1))
+                .conditionally(RandomChanceLootCondition.builder(0.1f))
+                .with(ItemEntry.builder(ModItems.OCELOT_PAW)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 1f))))
+                .build();
+
         LootPool witherSkeletonPool = LootPool.builder()
                 .rolls(ConstantLootNumberProvider.create(1))
                 .conditionally(RandomChanceLootCondition.builder(0.1f))
@@ -39,6 +46,7 @@ public class MobGearMobLootTableProvider extends FabricEntityLootTableProvider {
                 .build();
 
         register(EntityType.BAT, LootTable.builder().pool(batPool));
+        register(EntityType.OCELOT, LootTable.builder().pool(ocelotPool));
         register(EntityType.WITHER_SKELETON, LootTable.builder().pool(witherSkeletonPool));
     }
 }

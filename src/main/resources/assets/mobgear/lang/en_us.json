@@ -3,6 +3,7 @@
   "block.mobgear.ender_iron_block": "Ender Iron Block",
 
   "item.mobgear.bat_ear":"Bat Ear",
+  "item.mobgear.ocelot_paw": "Ocelot Paw",
   "item.mobgear.wither_bone": "Wither Bone",
   "item.mobgear.chorus_stick": "Chorus Stick",
   "item.mobgear.blazed_diamond": "Blazed Diamond",
@@ -17,6 +18,7 @@
   "item.mobgear.bat_helmet": "Bat Helmet",
   "item.mobgear.slime_leggings": "Slime Leggings",
   "item.mobgear.magma_cube_leggings": "Magma Cube Leggings",
+  "item.mobgear.ocelot_boots": "Ocelot Boots",
 
   "itemGroup.mobgear": "Mob Gear",
 

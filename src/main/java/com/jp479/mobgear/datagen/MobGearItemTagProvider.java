@@ -20,6 +20,9 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.BAT_EAR_REPAIR)
                 .add(ModItems.BAT_EAR);
 
+        valueLookupBuilder(ModTags.Items.OCELOT_PAW_REPAIR)
+                .add(ModItems.OCELOT_PAW);
+
         valueLookupBuilder(ModTags.Items.SLIME_BALL_REPAIR)
                 .add(Items.SLIME_BALL);
 
@@ -43,7 +46,8 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.WITHER_SKELETON_BOW)
                 .add(ModItems.BAT_HELMET)
                 .add(ModItems.SLIME_LEGGINGS)
-                .add(ModItems.MAGMA_CUBE_LEGGINGS);
+                .add(ModItems.MAGMA_CUBE_LEGGINGS)
+                .add(ModItems.OCELOT_BOOTS);
 
         valueLookupBuilder(ItemTags.MINING_ENCHANTABLE)
                 .add(ModItems.BLAZE_PICKAXE);
@@ -64,6 +68,10 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BLAZE_SWORD)
                 .add(ModItems.ENDERMAN_SWORD);
 
+        valueLookupBuilder(ItemTags.BOW_ENCHANTABLE)
+                .add(ModItems.SKELETON_BOW)
+                .add(ModItems.WITHER_SKELETON_BOW);
+
         valueLookupBuilder(ItemTags.HEAD_ARMOR)
                 .add(ModItems.BAT_HELMET);
 
@@ -78,8 +86,10 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.SLIME_LEGGINGS)
                 .add(ModItems.MAGMA_CUBE_LEGGINGS);
 
-        valueLookupBuilder(ItemTags.BOW_ENCHANTABLE)
-                .add(ModItems.SKELETON_BOW)
-                .add(ModItems.WITHER_SKELETON_BOW);
+        valueLookupBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.OCELOT_BOOTS);
+
+        valueLookupBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(ModItems.OCELOT_BOOTS);
     }
 }

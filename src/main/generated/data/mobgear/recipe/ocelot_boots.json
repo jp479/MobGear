@@ -3,15 +3,15 @@
   "category": "equipment",
   "group": "multi_bench",
   "key": {
-    "B": "mobgear:bat_ear",
-    "L": "minecraft:leather_helmet"
+    "L": "minecraft:leather_boots",
+    "O": "mobgear:ocelot_paw"
   },
   "pattern": [
-    "B B",
-    " L "
+    " L ",
+    "O O"
   ],
   "result": {
     "count": 1,
-    "id": "mobgear:bat_helmet"
+    "id": "mobgear:ocelot_boots"
   }
 }

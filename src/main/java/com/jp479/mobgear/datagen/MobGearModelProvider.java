@@ -10,7 +10,6 @@ import net.minecraft.client.render.item.property.numeric.UseDurationProperty;
 import net.minecraft.item.Item;
 
 public class MobGearModelProvider extends FabricModelProvider {
-
     public MobGearModelProvider(FabricDataOutput output) {
         super(output);
     }
@@ -25,6 +24,7 @@ public class MobGearModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Items
         itemModelGenerator.register(ModItems.BAT_EAR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OCELOT_PAW, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHER_BONE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CHORUS_STICK, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLAZED_DIAMOND, Models.GENERATED);
@@ -41,6 +41,7 @@ public class MobGearModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAT_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGMA_CUBE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OCELOT_BOOTS, Models.GENERATED);
     }
 
     public static void registerChargeableSword(ItemModelGenerator generator, Item item) {
