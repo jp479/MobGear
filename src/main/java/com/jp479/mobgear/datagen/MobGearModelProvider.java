@@ -4,9 +4,10 @@ import com.jp479.mobgear.block.ModBlocks;
 import com.jp479.mobgear.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
+import net.minecraft.client.data.*;
+import net.minecraft.client.render.item.model.ItemModel;
+import net.minecraft.client.render.item.property.numeric.UseDurationProperty;
+import net.minecraft.item.Item;
 
 public class MobGearModelProvider extends FabricModelProvider {
 
@@ -31,7 +32,7 @@ public class MobGearModelProvider extends FabricModelProvider {
 
         // Tools & Weapons
         itemModelGenerator.register(ModItems.BLAZE_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.ENDERMAN_SWORD, Models.HANDHELD);
+        registerChargeableSword(itemModelGenerator, ModItems.ENDERMAN_SWORD);
         itemModelGenerator.register(ModItems.BLAZE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.registerBow(ModItems.SKELETON_BOW);
         itemModelGenerator.registerBow(ModItems.WITHER_SKELETON_BOW);
@@ -40,5 +41,33 @@ public class MobGearModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAT_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGMA_CUBE_LEGGINGS, Models.GENERATED);
+    }
+
+    public static void registerChargeableSword(ItemModelGenerator generator, Item item) {
+        ItemModel.Unbaked base = ItemModels.basic(ModelIds.getItemModelId(item));
+
+        ItemModel.Unbaked pulling0 = ItemModels.basic(
+                generator.registerSubModel(item, "_pulling_0", Models.HANDHELD)
+        );
+        ItemModel.Unbaked pulling1 = ItemModels.basic(
+                generator.registerSubModel(item, "_pulling_1", Models.HANDHELD)
+        );
+        ItemModel.Unbaked pulling2 = ItemModels.basic(
+                generator.registerSubModel(item, "_pulling_2", Models.HANDHELD)
+        );
+
+        generator.output.accept(item,
+                ItemModels.condition(
+                        ItemModels.usingItemProperty(),
+                        ItemModels.rangeDispatch(
+                                new UseDurationProperty(false),
+                                0.05F,
+                                pulling0,
+                                ItemModels.rangeDispatchEntry(pulling1, 0.65F),
+                                ItemModels.rangeDispatchEntry(pulling2, 0.9F)
+                        ),
+                        base
+                )
+        );
     }
 }
