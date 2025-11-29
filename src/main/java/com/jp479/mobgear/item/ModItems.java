@@ -14,7 +14,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.util.function.Function;
 
@@ -53,26 +55,31 @@ public class ModItems {
             "blaze_sword",
             BlazeSword::new,
             new Item.Settings().sword(ModToolMaterials.BLAZE_DIAMOND_MATERIAL, 3.0f, -2.4f)
+                    .rarity(Rarity.EPIC)
     );
     public static final EndermanSword ENDERMAN_SWORD = (EndermanSword) register(
             "enderman_sword",
             EndermanSword::new,
             new Item.Settings().sword(ModToolMaterials.ENDER_IRON_MATERIAL, 3.0f, -2.4f)
+                    .rarity(Rarity.EPIC)
     );
     public static final BlazePickaxe BLAZE_PICKAXE = (BlazePickaxe) register(
             "blaze_pickaxe",
             BlazePickaxe::new,
             new Item.Settings().pickaxe(ModToolMaterials.BLAZE_DIAMOND_MATERIAL, 1.0f, -2.8f)
+                    .rarity(Rarity.EPIC)
     );
     public static final SkeletonBow SKELETON_BOW = (SkeletonBow) register(
             "skeleton_bow",
             SkeletonBow::new,
             new Item.Settings().maxDamage(448).enchantable(1)
+                    .rarity(Rarity.RARE)
     );
     public static final WitherSkeletonBow WITHER_SKELETON_BOW = (WitherSkeletonBow) register(
             "wither_skeleton_bow",
             WitherSkeletonBow::new,
             new Item.Settings().maxDamage(512).enchantable(1)
+                    .rarity(Rarity.EPIC)
     );
 
     // Armor
@@ -81,18 +88,21 @@ public class ModItems {
             BatHelmet::new,
             new Item.Settings().armor(ModArmorMaterials.BAT_EAR_MATERIAL, EquipmentType.HELMET)
                     .maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BAT_DURABILITY))
+                    .rarity(Rarity.UNCOMMON)
     );
     public static final SlimeLeggings SLIME_LEGGINGS = (SlimeLeggings) register(
             "slime_leggings",
             SlimeLeggings::new,
             new Item.Settings().armor(ModArmorMaterials.SLIME_BALL_MATERIAL, EquipmentType.LEGGINGS)
                     .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.SLIME_DURABILITY))
+                    .rarity(Rarity.RARE)
     );
     public static final MagmaCubeLeggings MAGMA_CUBE_LEGGINGS = (MagmaCubeLeggings) register(
             "magma_cube_leggings",
             MagmaCubeLeggings::new,
             new Item.Settings().armor(ModArmorMaterials.MAGMA_CREAM_MATERIAL, EquipmentType.LEGGINGS)
                     .maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.MAGMA_CUBE_DURABILITY))
+                    .rarity(Rarity.EPIC)
     );
 
     // Item group
