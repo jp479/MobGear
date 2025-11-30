@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "B": "minecraft:iron_block",
+    "I": "minecraft:iron_chestplate",
+    "P": "minecraft:carved_pumpkin",
+    "R": "minecraft:poppy"
+  },
+  "pattern": [
+    "BIB",
+    "BPB",
+    "BRB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mobgear:iron_golem_chestplate"
+  }
+}

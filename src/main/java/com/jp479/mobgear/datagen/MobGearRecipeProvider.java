@@ -135,6 +135,18 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.BAT_EAR), conditionsFromItem(ModItems.BAT_EAR))
                         .offerTo(exporter);
 
+                createShaped(RecipeCategory.COMBAT, ModItems.IRON_GOLEM_CHESTPLATE, 1)
+                        .pattern("BIB")
+                        .pattern("BPB")
+                        .pattern("BRB")
+                        .input('B', Items.IRON_BLOCK)
+                        .input('I', Items.IRON_CHESTPLATE)
+                        .input('P', Items.CARVED_PUMPKIN)
+                        .input('R', Items.POPPY)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.IRON_BLOCK), conditionsFromItem(Items.IRON_BLOCK))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.COMBAT, ModItems.SLIME_LEGGINGS, 1)
                         .pattern("SSS")
                         .pattern("SCS")

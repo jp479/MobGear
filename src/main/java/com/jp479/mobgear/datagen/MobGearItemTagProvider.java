@@ -35,6 +35,9 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.ENDER_IRON_REPAIR)
                 .add(ModItems.ENDER_IRON_INGOT);
 
+        valueLookupBuilder(ModTags.Items.IRON_BLOCK_REPAIR)
+                .add(Items.IRON_BLOCK);
+
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(ModItems.BLAZE_PICKAXE);
 
@@ -45,6 +48,7 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.SKELETON_BOW)
                 .add(ModItems.WITHER_SKELETON_BOW)
                 .add(ModItems.BAT_HELMET)
+                .add(ModItems.IRON_GOLEM_CHESTPLATE)
                 .add(ModItems.SLIME_LEGGINGS)
                 .add(ModItems.MAGMA_CUBE_LEGGINGS)
                 .add(ModItems.OCELOT_BOOTS);
@@ -77,6 +81,12 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
                 .add(ModItems.BAT_HELMET);
+
+        valueLookupBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.IRON_GOLEM_CHESTPLATE);
+
+        valueLookupBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ModItems.IRON_GOLEM_CHESTPLATE);
 
         valueLookupBuilder(ItemTags.LEG_ARMOR)
                 .add(ModItems.SLIME_LEGGINGS)

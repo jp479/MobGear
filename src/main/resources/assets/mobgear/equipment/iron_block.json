@@ -1,0 +1,9 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mobgear:iron_block"
+      }
+    ]
+  }
+}

@@ -39,6 +39,7 @@ public class MobGearModelProvider extends FabricModelProvider {
 
         // Armor
         itemModelGenerator.register(ModItems.BAT_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_GOLEM_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGMA_CUBE_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.OCELOT_BOOTS, Models.GENERATED);
@@ -47,14 +48,14 @@ public class MobGearModelProvider extends FabricModelProvider {
     public static void registerChargeableSword(ItemModelGenerator generator, Item item) {
         ItemModel.Unbaked base = ItemModels.basic(ModelIds.getItemModelId(item));
 
-        ItemModel.Unbaked pulling0 = ItemModels.basic(
-                generator.registerSubModel(item, "_pulling_0", Models.HANDHELD)
+        ItemModel.Unbaked charging0 = ItemModels.basic(
+                generator.registerSubModel(item, "_charging_0", Models.HANDHELD)
         );
-        ItemModel.Unbaked pulling1 = ItemModels.basic(
-                generator.registerSubModel(item, "_pulling_1", Models.HANDHELD)
+        ItemModel.Unbaked charging1 = ItemModels.basic(
+                generator.registerSubModel(item, "_charging_1", Models.HANDHELD)
         );
-        ItemModel.Unbaked pulling2 = ItemModels.basic(
-                generator.registerSubModel(item, "_pulling_2", Models.HANDHELD)
+        ItemModel.Unbaked charging2 = ItemModels.basic(
+                generator.registerSubModel(item, "_charging_2", Models.HANDHELD)
         );
 
         generator.output.accept(item,
@@ -63,9 +64,9 @@ public class MobGearModelProvider extends FabricModelProvider {
                         ItemModels.rangeDispatch(
                                 new UseDurationProperty(false),
                                 0.05F,
-                                pulling0,
-                                ItemModels.rangeDispatchEntry(pulling1, 0.65F),
-                                ItemModels.rangeDispatchEntry(pulling2, 0.9F)
+                                charging0,
+                                ItemModels.rangeDispatchEntry(charging1, 0.65F),
+                                ItemModels.rangeDispatchEntry(charging2, 0.9F)
                         ),
                         base
                 )

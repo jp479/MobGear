@@ -14,6 +14,7 @@ public class ModTags {
         public static final TagKey<Item> MAGMA_CREAM_REPAIR = createTag("magma_cream_repair");
         public static final TagKey<Item> BLAZED_DIAMOND_REPAIR = createTag("blazed_diamond_repair");
         public static final TagKey<Item> ENDER_IRON_REPAIR = createTag("ender_iron_repair");
+        public static final TagKey<Item> IRON_BLOCK_REPAIR = createTag("iron_block_repair");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MobGear.MOD_ID, name));

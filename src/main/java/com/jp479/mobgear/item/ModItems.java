@@ -93,6 +93,13 @@ public class ModItems {
                     .maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BAT_DURABILITY))
                     .rarity(Rarity.UNCOMMON)
     );
+    public static final IronGolemChestplate IRON_GOLEM_CHESTPLATE = (IronGolemChestplate) register(
+            "iron_golem_chestplate",
+            IronGolemChestplate::new,
+            new Item.Settings().armor(ModArmorMaterials.IRON_BLOCK_MATERIAL, EquipmentType.CHESTPLATE)
+                    .maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.IRON_GOLEM_DURABILITY))
+                    .rarity(Rarity.EPIC)
+    );
     public static final SlimeLeggings SLIME_LEGGINGS = (SlimeLeggings) register(
             "slime_leggings",
             SlimeLeggings::new,
@@ -159,6 +166,7 @@ public class ModItems {
 
             // Armor
             itemGroup.add(BAT_HELMET);
+            itemGroup.add(IRON_GOLEM_CHESTPLATE);
             itemGroup.add(SLIME_LEGGINGS);
             itemGroup.add(MAGMA_CUBE_LEGGINGS);
             itemGroup.add(OCELOT_BOOTS);

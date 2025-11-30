@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "mobgear:item/enderman_sword_pulling_0"
+    "layer0": "mobgear:item/enderman_sword_charging_1"
   }
 }
