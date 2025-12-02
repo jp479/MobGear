@@ -1,3 +1,4 @@
 // 1.21.10	-999999999-01-01T00:00:00	Mob Gear/Block Loot Tables
 472d6911007d0d79ea5a7d9ae6fdfa7017047ef9 data/mobgear/loot_table/blocks/blazed_diamond_block.json
 075d4470e6cedb69659ab46d6ebae44b650ac10a data/mobgear/loot_table/blocks/ender_iron_block.json
+301d6ca9d41cb2178f6e537715d7ea79bcf6f11d data/mobgear/loot_table/blocks/iron_golem_core.json

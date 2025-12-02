@@ -1,6 +1,7 @@
 package com.jp479.mobgear.datagen;
 
 import com.jp479.mobgear.block.ModBlocks;
+import com.jp479.mobgear.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -15,10 +16,16 @@ public class MobGearBlockTagProvider extends FabricTagProvider.BlockTagProvider 
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        valueLookupBuilder(ModTags.Blocks.BLAZED_DIAMOND)
+                .add(ModBlocks.BLAZED_DIAMOND_BLOCK);
+
+        valueLookupBuilder(ModTags.Blocks.ENDER_IRON)
+                .add(ModBlocks.ENDER_IRON_BLOCK);
+
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BLAZED_DIAMOND_BLOCK)
-                .add(ModBlocks.ENDER_IRON_BLOCK)
-;
+                .add(ModBlocks.ENDER_IRON_BLOCK);
+
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLAZED_DIAMOND_BLOCK)
                 .add(ModBlocks.ENDER_IRON_BLOCK);

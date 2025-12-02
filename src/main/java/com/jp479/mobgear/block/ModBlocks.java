@@ -1,8 +1,10 @@
 package com.jp479.mobgear.block;
 
 import com.jp479.mobgear.MobGear;
+import com.jp479.mobgear.block.custom.IronGolemCoreBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.HeavyCoreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -30,6 +32,13 @@ public class ModBlocks {
                     .resistance(6.0f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL))
+    );
+    public static final Block IRON_GOLEM_CORE = register(
+            "iron_golem_core",
+            properties -> new IronGolemCoreBlock(properties
+                    .strength(10.0f)
+                    .resistance(1200.0f)
+                    .sounds(BlockSoundGroup.HEAVY_CORE))
     );
 
     private static Block register(String name, Function<AbstractBlock.Settings, Block> function) {

@@ -42,6 +42,11 @@ public class ModItems {
             Item::new,
             new Item.Settings()
     );
+    public static final Item IRON_ROD = register(
+            "iron_rod",
+            Item::new,
+            new Item.Settings()
+    );
     public static final Item BLAZED_DIAMOND = register(
             "blazed_diamond",
             Item::new,
@@ -70,6 +75,12 @@ public class ModItems {
             "blaze_pickaxe",
             BlazePickaxe::new,
             new Item.Settings().pickaxe(ModToolMaterials.BLAZE_DIAMOND_MATERIAL, 1.0f, -2.8f)
+                    .rarity(Rarity.EPIC)
+    );
+    public static final IronGolemMace IRON_GOLEM_MACE = (IronGolemMace) register(
+            "iron_golem_mace",
+            IronGolemMace::new,
+            new Item.Settings().sword(ModToolMaterials.IRON_BLOCK_MATERIAL, 5.0f, -3.4f)
                     .rarity(Rarity.EPIC)
     );
     public static final SkeletonBow SKELETON_BOW = (SkeletonBow) register(
@@ -154,13 +165,16 @@ public class ModItems {
             itemGroup.add(OCELOT_PAW);
             itemGroup.add(WITHER_BONE);
             itemGroup.add(CHORUS_STICK);
+            itemGroup.add(IRON_ROD);
             itemGroup.add(BLAZED_DIAMOND);
             itemGroup.add(ENDER_IRON_INGOT);
+            itemGroup.add(ModBlocks.IRON_GOLEM_CORE);
 
             // Tools & Weapons
             itemGroup.add(BLAZE_SWORD);
             itemGroup.add(ENDERMAN_SWORD);
             itemGroup.add(BLAZE_PICKAXE);
+            itemGroup.add(IRON_GOLEM_MACE);
             itemGroup.add(SKELETON_BOW);
             itemGroup.add(WITHER_SKELETON_BOW);
 

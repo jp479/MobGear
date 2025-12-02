@@ -1,3 +1,5 @@
 // 1.21.10	-999999999-01-01T00:00:00	Mob Gear/Tags for minecraft:block
 b3a7735a4dee2f3b26391fe0d92cb2202ce53421 data/minecraft/tags/block/mineable/pickaxe.json
 b3a7735a4dee2f3b26391fe0d92cb2202ce53421 data/minecraft/tags/block/needs_iron_tool.json
+788ae78676743fdfc6d74c74de57b3054697db2b data/mobgear/tags/block/blazed_diamond.json
+fbb605a837558e293ea0129efbcf31917140a005 data/mobgear/tags/block/ender_iron.json

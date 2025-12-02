@@ -21,4 +21,12 @@ public class ModToolMaterials {
             10,
             ModTags.Items.ENDER_IRON_REPAIR
     );
+    public static final ToolMaterial IRON_BLOCK_MATERIAL = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+            1796,
+            8.0f,
+            4.0f,
+            10,
+            ModTags.Items.IRON_BLOCK_REPAIR
+    );
 }

@@ -40,6 +40,16 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_IRON_BLOCK
                 );
 
+                createShaped(RecipeCategory.MISC, ModBlocks.IRON_GOLEM_CORE, 1)
+                        .pattern("III")
+                        .pattern("IHI")
+                        .pattern("III")
+                        .input('I', Items.IRON_BLOCK)
+                        .input('H', Items.HEAVY_CORE)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.HEAVY_CORE), conditionsFromItem(Items.HEAVY_CORE))
+                        .offerTo(exporter);
+
                 // Items
                 createShapeless(RecipeCategory.MISC, ModItems.WITHER_BONE, 3)
                         .input(Items.WITHER_SKELETON_SKULL)
@@ -51,7 +61,15 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .input(Items.STICK)
                         .input(Items.POPPED_CHORUS_FRUIT)
                         .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
-                        .offerTo(exporter);;
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModItems.IRON_ROD, 1)
+                        .pattern("I")
+                        .pattern("I")
+                        .input('I', Items.IRON_INGOT)
+                        .group("multi_bench")
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                        .offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.BLAZED_DIAMOND, 1)
                         .pattern(" B ")
@@ -102,6 +120,15 @@ public class MobGearRecipeProvider extends FabricRecipeProvider {
                         .input('R', Items.BLAZE_ROD)
                         .group("multi_bench")
                         .criterion(hasItem(ModItems.BLAZED_DIAMOND), conditionsFromItem(ModItems.BLAZED_DIAMOND))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.IRON_GOLEM_MACE, 1)
+                        .pattern("I")
+                        .pattern("R")
+                        .input('I', ModBlocks.IRON_GOLEM_CORE)
+                        .input('R', ModItems.IRON_ROD)
+                        .group("multi_bench")
+                        .criterion(hasItem(ModBlocks.IRON_GOLEM_CORE), conditionsFromItem(ModBlocks.IRON_GOLEM_CORE))
                         .offerTo(exporter);
 
                 createShaped(RecipeCategory.COMBAT, ModItems.SKELETON_BOW, 1)

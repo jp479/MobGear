@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "I": "mobgear:iron_golem_core",
+    "R": "mobgear:iron_rod"
+  },
+  "pattern": [
+    "I",
+    "R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mobgear:iron_golem_mace"
+  }
+}

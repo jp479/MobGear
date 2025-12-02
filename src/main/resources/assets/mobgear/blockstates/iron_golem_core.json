@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mobgear:block/iron_golem_core"
+    }
+  }
+}

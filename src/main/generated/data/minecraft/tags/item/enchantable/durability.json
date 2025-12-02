@@ -1,8 +1,9 @@
 {
   "values": [
-    "mobgear:blaze_pickaxe",
     "mobgear:blaze_sword",
     "mobgear:enderman_sword",
+    "mobgear:blaze_pickaxe",
+    "mobgear:iron_golem_mace",
     "mobgear:skeleton_bow",
     "mobgear:wither_skeleton_bow",
     "mobgear:bat_helmet",

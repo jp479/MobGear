@@ -1,5 +1,6 @@
 package com.jp479.mobgear.datagen;
 
+import com.jp479.mobgear.block.ModBlocks;
 import com.jp479.mobgear.item.ModItems;
 import com.jp479.mobgear.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -41,10 +42,14 @@ public class MobGearItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(ModItems.BLAZE_PICKAXE);
 
+        valueLookupBuilder(ItemTags.MACE_ENCHANTABLE)
+                .add(ModItems.IRON_GOLEM_MACE);
+
         valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE)
-                .add(ModItems.BLAZE_PICKAXE)
                 .add(ModItems.BLAZE_SWORD)
                 .add(ModItems.ENDERMAN_SWORD)
+                .add(ModItems.BLAZE_PICKAXE)
+                .add(ModItems.IRON_GOLEM_MACE)
                 .add(ModItems.SKELETON_BOW)
                 .add(ModItems.WITHER_SKELETON_BOW)
                 .add(ModItems.BAT_HELMET)

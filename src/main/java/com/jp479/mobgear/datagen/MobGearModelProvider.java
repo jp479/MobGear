@@ -27,6 +27,7 @@ public class MobGearModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OCELOT_PAW, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHER_BONE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CHORUS_STICK, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_ROD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BLAZED_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_IRON_INGOT, Models.GENERATED);
 
@@ -34,6 +35,7 @@ public class MobGearModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLAZE_SWORD, Models.HANDHELD);
         registerChargeableSword(itemModelGenerator, ModItems.ENDERMAN_SWORD);
         itemModelGenerator.register(ModItems.BLAZE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_GOLEM_MACE, Models.HANDHELD);
         itemModelGenerator.registerBow(ModItems.SKELETON_BOW);
         itemModelGenerator.registerBow(ModItems.WITHER_SKELETON_BOW);
 

@@ -2,11 +2,12 @@
 fca3c5b38db8b8da493cff032f0662f47fbb90d4 data/minecraft/tags/item/chest_armor.json
 03b8d486111c5a000e854e70cfae3e43fc3f7a64 data/minecraft/tags/item/enchantable/bow.json
 fca3c5b38db8b8da493cff032f0662f47fbb90d4 data/minecraft/tags/item/enchantable/chest_armor.json
-edc8ac9a17766bf4ab0449422744b7c90c74cb6f data/minecraft/tags/item/enchantable/durability.json
+39ae18624f64ad183f8e7fb775fee3623b076479 data/minecraft/tags/item/enchantable/durability.json
 d8b2ebeabfe0e220e5168dbe1423b6c37b862d00 data/minecraft/tags/item/enchantable/fire_aspect.json
 298c135706f025410d88dfd73713fb694d9c78e4 data/minecraft/tags/item/enchantable/foot_armor.json
 0a6277e7169b20988f91b095d39f370c2d1113e4 data/minecraft/tags/item/enchantable/head_armor.json
 815bfad72bc422e74ed261c5f16d6e0964434ce5 data/minecraft/tags/item/enchantable/leg_armor.json
+24de799df76bd7c00562097e3d8b8f3a5e79ef1a data/minecraft/tags/item/enchantable/mace.json
 e79eb95f26c7ac6848348ce9ae746ee5c1cd5b09 data/minecraft/tags/item/enchantable/mining.json
 d8b2ebeabfe0e220e5168dbe1423b6c37b862d00 data/minecraft/tags/item/enchantable/sharp_weapon.json
 d8b2ebeabfe0e220e5168dbe1423b6c37b862d00 data/minecraft/tags/item/enchantable/sword.json

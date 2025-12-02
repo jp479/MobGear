@@ -1,6 +1,7 @@
 {
   "block.mobgear.blazed_diamond_block": "Blazed Diamond Block",
   "block.mobgear.ender_iron_block": "Ender Iron Block",
+  "block.mobgear.iron_golem_core": "Iron Golem Core",
 
   "item.mobgear.bat_ear":"Bat Ear",
   "item.mobgear.ocelot_paw": "Ocelot Paw",
@@ -12,6 +13,7 @@
   "item.mobgear.blaze_sword": "Blaze Sword",
   "item.mobgear.enderman_sword": "Enderman Sword",
   "item.mobgear.blaze_pickaxe": "Blaze Pickaxe",
+  "item.mobgear.iron_golem_mace": "Iron Golem Mace",
   "item.mobgear.skeleton_bow": "Skeleton Bow",
   "item.mobgear.wither_skeleton_bow": "Wither Skeleton Bow",
 
