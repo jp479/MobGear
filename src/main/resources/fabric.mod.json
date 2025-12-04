@@ -18,6 +18,9 @@
 		"main": [
 			"com.jp479.mobgear.MobGear"
 		],
+        "client": [
+            "com.jp479.mobgear.MobGearClient"
+        ],
 		"fabric-datagen": [
 			"com.jp479.mobgear.MobGearDataGenerator"
 		]
